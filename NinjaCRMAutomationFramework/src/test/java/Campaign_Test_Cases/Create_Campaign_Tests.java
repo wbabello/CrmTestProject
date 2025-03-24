@@ -75,7 +75,6 @@ public class Create_Campaign_Tests extends BaseClass {
 
 		boolean status = confMsg.contains(campName);
 		Assert.assertEquals(status, true);
-		Thread.sleep(3000);
 		System.out.println(status);
 		
 

@@ -52,7 +52,7 @@ public class Login_Test extends BaseClass {
 		Thread.sleep(2000);
 		String dashBoardUrl = driver.getCurrentUrl();
 		
-//		Assert.
+		Assert.assertEquals(dashBoardUrl, expectedUrl);
 //		System.out.println(dashBoardUrl);
 //		if (expectedUrl.equals(dashBoardUrl)) {
 //			System.out.println("Test Validation is pass");
