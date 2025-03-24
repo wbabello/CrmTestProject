@@ -48,16 +48,35 @@ public class BaseClass {
 
 
 
-	@BeforeClass
 	@Parameters("browser")
-	public void setUp(@Optional("chrome") String browser) {
-		if (browser.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		} else {
-			throw new IllegalArgumentException("Browser not supported: " + browser);
+	@BeforeClass
+	public void beforeClass(String browser) throws IOException
+	{
+		String Browser=browser;
+		System.out.println("Launch the browser");
+		
+//		String BROWSER = fLib.getDataFromPropFile("browser");
+		
+		if(Browser.equalsIgnoreCase("chrome"))
+		{
+			driver=new ChromeDriver();
 		}
+		else if(Browser.equalsIgnoreCase("firefox"))
+		{
+			driver=new FirefoxDriver();
+		}
+		else if(Browser.equalsIgnoreCase("edge"))
+		{
+			driver=new EdgeDriver();
+		}
+		else
+		{
+			driver=new ChromeDriver();
+		}
+		sdriver=driver;
+		UtilityClassObject.setDriver(driver);
+		
+		
 	}
 
 

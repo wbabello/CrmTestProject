@@ -44,12 +44,6 @@ public class Login_Test extends BaseClass {
 		driver.manage().window().maximize();
 		
 		Thread.sleep(2000);
-		
-		
-		
-
-
-		Thread.sleep(2000);
 		String dashBoardUrl = driver.getCurrentUrl();
 		
 		Assert.assertEquals(dashBoardUrl, expectedUrl);
@@ -62,7 +56,7 @@ public class Login_Test extends BaseClass {
 //		}	
 
 		
-		
+		Thread.sleep(2000);
 		
 		
 
