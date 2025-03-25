@@ -1,61 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T08:45:06 GMT" name="Default suite" finished-at="2025-03-25T08:45:44 GMT" duration-ms="38114">
+  <suite started-at="2025-03-25T09:12:37 GMT" name="Suite" finished-at="2025-03-25T09:14:31 GMT" duration-ms="113418">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreatE_ContactWithCampaign.createContactWithCampaign_TC1Test()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" name="createContactWithCampaign_TC1Test" class="Contact_Test_Cases.CreatE_ContactWithCampaign"/>
+        <method signature="CreateProduct.createProduct_TC1Test()[pri:0, instance:Product_Test_Cases.CreateProduct@3c9754d8]" name="createProduct_TC1Test" class="Product_Test_Cases.CreateProduct"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="Login_Test.logIn_Test_TC1Test()[pri:0, instance:Login_Test_Cases.Login_Test@3bf7ca37]" name="logIn_Test_TC1Test" class="Login_Test_Cases.Login_Test"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-03-25T08:45:06 GMT" name="Default test" finished-at="2025-03-25T08:45:44 GMT" duration-ms="38114">
-      <class name="Campaign_Test_Cases.Create_Campaign_Tests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:06 GMT" name="beforeSuite" finished-at="2025-03-25T08:45:06 GMT" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:06 GMT" name="beforeTest" finished-at="2025-03-25T08:45:06 GMT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:06 GMT" name="beforeClass" finished-at="2025-03-25T08:45:12 GMT" duration-ms="5901" status="PASS">
+    <test started-at="2025-03-25T09:12:37 GMT" name="Test" finished-at="2025-03-25T09:14:31 GMT" duration-ms="113418">
+      <class name="Login_Test_Cases.Login_Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Login_Test_Cases.Login_Test@3bf7ca37]" started-at="2025-03-25T09:13:43 GMT" name="beforeClass" finished-at="2025-03-25T09:13:46 GMT" duration-ms="2864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:12 GMT" name="beforeMethod" finished-at="2025-03-25T08:45:16 GMT" duration-ms="4548" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Login_Test_Cases.Login_Test@3bf7ca37]" started-at="2025-03-25T09:13:46 GMT" name="beforeMethod" finished-at="2025-03-25T09:13:51 GMT" duration-ms="4685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Create_Campaign_WithCloseDate_TC1()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:16 GMT" name="Create_Campaign_WithCloseDate_TC1" finished-at="2025-03-25T08:45:29 GMT" duration-ms="12871" status="PASS">
+        <test-method signature="logIn_Test_TC1Test()[pri:0, instance:Login_Test_Cases.Login_Test@3bf7ca37]" started-at="2025-03-25T09:13:51 GMT" name="logIn_Test_TC1Test" finished-at="2025-03-25T09:13:55 GMT" duration-ms="4329" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Create_Campaign_WithCloseDate_TC1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:29 GMT" name="afterMethod" finished-at="2025-03-25T08:45:29 GMT" duration-ms="231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:30 GMT" name="beforeMethod" finished-at="2025-03-25T08:45:33 GMT" duration-ms="3290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithout_CloseDate_TC2()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:33 GMT" name="createCampaignWithout_CloseDate_TC2" finished-at="2025-03-25T08:45:43 GMT" duration-ms="10360" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCampaignWithout_CloseDate_TC2 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:43 GMT" name="afterMethod" finished-at="2025-03-25T08:45:43 GMT" duration-ms="172" status="PASS">
+        </test-method> <!-- logIn_Test_TC1Test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Login_Test_Cases.Login_Test@3bf7ca37]" started-at="2025-03-25T09:13:55 GMT" name="afterMethod" finished-at="2025-03-25T09:13:55 GMT" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:43 GMT" name="afterClass" finished-at="2025-03-25T08:45:44 GMT" duration-ms="597" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Login_Test_Cases.Login_Test@3bf7ca37]" started-at="2025-03-25T09:13:55 GMT" name="afterClass" finished-at="2025-03-25T09:13:56 GMT" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:44 GMT" name="afterTest" finished-at="2025-03-25T08:45:44 GMT" duration-ms="1" status="PASS">
+      </class> <!-- Login_Test_Cases.Login_Test -->
+      <class name="Contact_Test_Cases.CreatE_ContactWithCampaign">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:12:37 GMT" name="beforeSuite" finished-at="2025-03-25T09:12:37 GMT" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:12:37 GMT" name="beforeTest" finished-at="2025-03-25T09:12:37 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:12:37 GMT" name="beforeClass" finished-at="2025-03-25T09:12:42 GMT" duration-ms="4210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:12:42 GMT" name="beforeMethod" finished-at="2025-03-25T09:12:46 GMT" duration-ms="4516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createContactWithCampaign_TC1Test()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:12:46 GMT" name="createContactWithCampaign_TC1Test" finished-at="2025-03-25T09:13:14 GMT" duration-ms="28264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithCampaign_TC1Test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:13:14 GMT" name="afterMethod" finished-at="2025-03-25T09:13:15 GMT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:13:15 GMT" name="afterClass" finished-at="2025-03-25T09:13:15 GMT" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:14:31 GMT" name="afterTest" finished-at="2025-03-25T09:14:31 GMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuit()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@1fa121e2]" started-at="2025-03-25T08:45:44 GMT" name="afterSuit" finished-at="2025-03-25T08:45:44 GMT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterSuit()[pri:0, instance:Contact_Test_Cases.CreatE_ContactWithCampaign@1a677343]" started-at="2025-03-25T09:14:31 GMT" name="afterSuit" finished-at="2025-03-25T09:14:31 GMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuit -->
+      </class> <!-- Contact_Test_Cases.CreatE_ContactWithCampaign -->
+      <class name="Campaign_Test_Cases.Create_Campaign_Tests">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:13:56 GMT" name="beforeClass" finished-at="2025-03-25T09:13:59 GMT" duration-ms="2966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:13:59 GMT" name="beforeMethod" finished-at="2025-03-25T09:14:04 GMT" duration-ms="4686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Create_Campaign_WithCloseDate_TC1Test()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:14:04 GMT" name="Create_Campaign_WithCloseDate_TC1Test" finished-at="2025-03-25T09:14:16 GMT" duration-ms="11668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_Campaign_WithCloseDate_TC1Test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:14:16 GMT" name="afterMethod" finished-at="2025-03-25T09:14:16 GMT" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:14:16 GMT" name="beforeMethod" finished-at="2025-03-25T09:14:20 GMT" duration-ms="3812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createCampaignWithout_CloseDate_TC2Test()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:14:20 GMT" name="createCampaignWithout_CloseDate_TC2Test" finished-at="2025-03-25T09:14:30 GMT" duration-ms="10510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaignWithout_CloseDate_TC2Test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:14:30 GMT" name="afterMethod" finished-at="2025-03-25T09:14:30 GMT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Campaign_Test_Cases.Create_Campaign_Tests@79079097]" started-at="2025-03-25T09:14:30 GMT" name="afterClass" finished-at="2025-03-25T09:14:31 GMT" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- Campaign_Test_Cases.Create_Campaign_Tests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Product_Test_Cases.CreateProduct">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Product_Test_Cases.CreateProduct@3c9754d8]" started-at="2025-03-25T09:13:15 GMT" name="beforeClass" finished-at="2025-03-25T09:13:18 GMT" duration-ms="2778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Product_Test_Cases.CreateProduct@3c9754d8]" started-at="2025-03-25T09:13:18 GMT" name="beforeMethod" finished-at="2025-03-25T09:13:23 GMT" duration-ms="4988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createProduct_TC1Test()[pri:0, instance:Product_Test_Cases.CreateProduct@3c9754d8]" started-at="2025-03-25T09:13:23 GMT" name="createProduct_TC1Test" finished-at="2025-03-25T09:13:43 GMT" duration-ms="19407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProduct_TC1Test -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Product_Test_Cases.CreateProduct@3c9754d8]" started-at="2025-03-25T09:13:43 GMT" name="afterMethod" finished-at="2025-03-25T09:13:43 GMT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Product_Test_Cases.CreateProduct@3c9754d8]" started-at="2025-03-25T09:13:43 GMT" name="afterClass" finished-at="2025-03-25T09:13:43 GMT" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- Product_Test_Cases.CreateProduct -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
