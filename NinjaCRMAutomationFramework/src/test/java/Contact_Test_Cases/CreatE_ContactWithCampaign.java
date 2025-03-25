@@ -81,7 +81,7 @@ public class CreatE_ContactWithCampaign extends BaseClass {
 		Assert.assertEquals(status, true);		
 		Thread.sleep(5000);
 
-		
+		System.out.println("TestCase3 Created Successfull");
 
 	}
 

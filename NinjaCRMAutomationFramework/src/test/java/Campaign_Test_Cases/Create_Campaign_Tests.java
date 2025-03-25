@@ -77,7 +77,7 @@ public class Create_Campaign_Tests extends BaseClass {
 		Assert.assertEquals(status, true);
 		System.out.println(status);
 		
-
+		System.out.println("TestCase1 Created Successfull");
 		
 	}
 
@@ -114,7 +114,7 @@ public class Create_Campaign_Tests extends BaseClass {
 		campaign.displayCampaignMessage(campName);
 		Thread.sleep(5000);
 		
-
+		System.out.println("TestCase2 Created Successfull");
 
 	}
 
