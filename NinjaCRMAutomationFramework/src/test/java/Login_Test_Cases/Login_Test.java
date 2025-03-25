@@ -23,7 +23,7 @@ import ObjectRepository.LoginPage;
 
 public class Login_Test extends BaseClass {
 @Test(groups = "smokeTest")
-	public void logIn_Test_TC1() throws IOException, InterruptedException {
+	public void logIn_Test_TC1Test() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
 		String expectedUrl = "http://49.249.28.218:8098/dashboard";

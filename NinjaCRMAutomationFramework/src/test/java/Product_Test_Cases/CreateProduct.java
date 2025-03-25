@@ -17,7 +17,7 @@ import ObjectRepository.dashboardPage;
 
 public class CreateProduct extends BaseClass {
 @Test(groups = "regressionTest")
-	public void createProduct_TC1() throws IOException, InterruptedException {
+	public void createProduct_TC1Test() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
 		PropertiesFileUtility propUtil = new PropertiesFileUtility();

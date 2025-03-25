@@ -28,7 +28,7 @@ public class CreatE_ContactWithCampaign extends BaseClass {
 
 	@Test(groups = "regressionTest")
 
-	public void createContactWithCampaign_TC1() throws IOException, InterruptedException {
+	public void createContactWithCampaign_TC1Test() throws IOException, InterruptedException {
 
 		PropertiesFileUtility propUtil = new PropertiesFileUtility();
 		String BROWSER = propUtil.getDataFromPropFile("browser");

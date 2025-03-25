@@ -46,16 +46,14 @@ public class BaseClass {
 		System.out.println("Configuration setup started");
 	}
 
-
-
-	@Parameters("browser")
+//	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browser) throws IOException
+	public void beforeClass() throws IOException
 	{
-		String Browser=browser;
+//		String Browser=browser;
 		System.out.println("Launch the browser");
 		
-//		String BROWSER = fLib.getDataFromPropFile("browser");
+		String Browser = fLib.getDataFromPropFile("browser");
 		
 		if(Browser.equalsIgnoreCase("chrome"))
 		{
@@ -79,8 +77,6 @@ public class BaseClass {
 		
 	}
 
-
-
 	@BeforeMethod
 	public void beforeMethod() throws IOException {
 		System.out.println("Login");
@@ -100,24 +96,23 @@ public class BaseClass {
 
 	@AfterClass
 	public void afterClass() {
-		
+
 		sdriver.quit();
 	}
-	
-	
+
 	@AfterMethod
 	public void afterMethod() {
-		
-		System.out.println("Log-out");		
+
+		System.out.println("Log-out");
 		dashboardPage dash = new dashboardPage(driver);
 		dash.logOut();
-		
+
 	}
-	
+
 	@AfterTest
 	public void afterTest() {
 		System.out.println("Configuration setup ended");
-		
+
 	}
 
 }

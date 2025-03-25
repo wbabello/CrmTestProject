@@ -6,14 +6,14 @@
       <class name="Campaign_Test_Cases.Create_Campaign_Tests">
         <methods>
           <include name="afterClass"/>
-          <include name="beforeTest"/>
+          <include name="afterTest"/>
           <include name="afterSuit"/>
+          <include name="beforeTest"/>
           <include name="beforeSuite"/>
-          <include name="createCampaignWithout_CloseDate_TC2"/>
           <include name="afterMethod"/>
+          <include name="createCampaignWithout_CloseDate_TC2"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="Create_Campaign_WithCloseDate_TC1"/>
         </methods>
       </class> <!-- Campaign_Test_Cases.Create_Campaign_Tests -->
     </classes>

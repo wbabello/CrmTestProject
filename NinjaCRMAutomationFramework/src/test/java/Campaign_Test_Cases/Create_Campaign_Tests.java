@@ -39,7 +39,7 @@ import GenericBaseClassUtility.BaseClass;
 
 public class Create_Campaign_Tests extends BaseClass {
 	@Test()
-	public void Create_Campaign_WithCloseDate_TC1() throws IOException, InterruptedException {
+	public void Create_Campaign_WithCloseDate_TC1Test() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
 		PropertiesFileUtility propUtil = new PropertiesFileUtility();
@@ -82,7 +82,7 @@ public class Create_Campaign_Tests extends BaseClass {
 	}
 
 	@Test()
-	public void createCampaignWithout_CloseDate_TC2() throws IOException, InterruptedException {
+	public void createCampaignWithout_CloseDate_TC2Test() throws IOException, InterruptedException {
 
 		PropertiesFileUtility propUtil = new PropertiesFileUtility();
 		String BROWSER = propUtil.getDataFromPropFile("browser");
