@@ -37,7 +37,7 @@ import org.testng.annotations.Test;
 
 import GenericBaseClassUtility.BaseClass;
 
-public class Create_Campaign_Tests extends BaseClass {
+public class Create_Campaign_Test extends BaseClass {
 	@Test()
 	public void CreateCampaignWithCloseDateTest() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub

@@ -21,7 +21,7 @@ import GenericBaseClassUtility.BaseClass;
 import GenericFileUtility.PropertiesFileUtility;
 import ObjectRepository.LoginPage;
 
-public class Login_Test extends BaseClass {
+public class LoginTest extends BaseClass {
 @Test(groups = "smokeTest")
 	public void logInTest() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub

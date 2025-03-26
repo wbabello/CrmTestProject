@@ -15,7 +15,7 @@ import ObjectRepository.CreateProductPage;
 import ObjectRepository.ProductsPage;
 import ObjectRepository.dashboardPage;
 
-public class CreateProduct extends BaseClass {
+public class CreateProductTest extends BaseClass {
 @Test(groups = "regressionTest")
 	public void createProductTest() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub

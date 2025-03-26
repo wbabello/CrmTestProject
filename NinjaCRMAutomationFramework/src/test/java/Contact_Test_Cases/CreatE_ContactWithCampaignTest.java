@@ -24,7 +24,7 @@ import ObjectRepository.LoginPage;
 import ObjectRepository.ProductsPage;
 import ObjectRepository.dashboardPage;
 
-public class CreatE_ContactWithCampaign extends BaseClass {
+public class CreatE_ContactWithCampaignTest extends BaseClass {
 
 	@Test(groups = "regressionTest")
 
