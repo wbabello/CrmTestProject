@@ -54,6 +54,7 @@ public class BaseClass {
 		System.out.println("Launch the browser");
 		
 		String Browser = fLib.getDataFromPropFile("browser");
+//		String Browser = System.getProperty("browser");
 		
 		if(Browser.equalsIgnoreCase("chrome"))
 		{
@@ -81,6 +82,8 @@ public class BaseClass {
 	public void beforeMethod() throws IOException {
 		System.out.println("Login");
 		String URL = fLib.getDataFromPropFile("url");
+//		String PASSWORD = System.getProperty("password");
+//		String USERNAME = System.getProperty("uname");
 		String PASSWORD = fLib.getDataFromPropFile("password");
 		String USERNAME = fLib.getDataFromPropFile("uname");
 		driver.get(URL);
