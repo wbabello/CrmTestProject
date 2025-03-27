@@ -7,7 +7,7 @@ public class jenkinsTestExample {
 
 		
 	@Test
-	private void printMethodTest() {
+	private void printStatementTest() {
 		// TODO Auto-generated method stub
 		System.out.println("Testing Auto Run successfully - Jenkis  build successful");
 		
