@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericBaseClassUtility.BaseClass;
@@ -23,7 +24,10 @@ import ObjectRepository.CreateProductPage;
 import ObjectRepository.LoginPage;
 import ObjectRepository.ProductsPage;
 import ObjectRepository.dashboardPage;
+import genericListenerUtility.ListenerImp;
 
+
+@Listeners(ListenerImp.class)
 public class CreatE_ContactWithCampaignTest extends BaseClass {
 
 	@Test(groups = "regressionTest")

@@ -8,11 +8,68 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">38,016</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">85,031</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Contact_Test_Cases.CreatE_ContactWithCampaign</td><td><a href="#m0">createContactWithCampaignTest</a></td><td rowspan="1">1742894736120</td><td rowspan="1">27627</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Campaign_Test_Cases.Create_Campaign_Test</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1743495792377</td><td rowspan="1">1161</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Campaign_Test_Cases.Create_Campaign_Test</td><td><a href="#m1">CreateCampaignWithCloseDateTest</a></td><td rowspan="1">1743495789671</td><td rowspan="1">2449</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">Campaign_Test_Cases.Create_Campaign_Test</td><td><a href="#m2">afterClass</a></td><td rowspan="1">1743495793575</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">afterMethod</a></td><td rowspan="1">1743495793568</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">beforeMethod</a></td><td rowspan="1">1743495793550</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Campaign_Test_Cases.Create_Campaign_Test</td><td><a href="#m5">createCampaignWithoutCloseDateTest</a></td><td rowspan="1">1743495793560</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Contact_Test_Cases.CreatE_ContactWithCampaignTest</td><td><a href="#m6">createContactWithCampaignTest</a></td><td rowspan="1">1743495754449</td><td rowspan="1">26608</td></tr><tr class="passedodd"><td rowspan="1">Login_Test_Cases.LoginTest</td><td><a href="#m7">logInTest</a></td><td rowspan="1">1743495742795</td><td rowspan="1">4187</td></tr><tr class="passedeven"><td rowspan="1">Product_Test_Cases.CreateProductTest</td><td><a href="#m8">createProductTest</a></td><td rowspan="1">1743495801013</td><td rowspan="1">18215</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Contact_Test_Cases.CreatE_ContactWithCampaign#createContactWithCampaignTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">Campaign_Test_Cases.Create_Campaign_Test#afterMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;user&quot; class=&quot;svg-inline--fa fa-user &quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot; style=&quot;font-size: 22px; padding: 0px;&quot;&gt;...&lt;/svg&gt; is not clickable at point (1448, 35). Other element would receive the click: &lt;div role=&quot;alert&quot; class=&quot;Toastify__toast-body&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.166)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcc86bdc42d3b27384579efc1735ab1f, clickElement {id=f.AAEA1ACD55F0CDC3242F625750EEAB5E.d.71591BFC6E99C3EF0219DE14B535F08C.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\wbabe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54183/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bcc86bdc42d3b27384579efc1735ab1f)] -&gt; xpath: //*[ name()=&apos;svg&apos; and @role =&apos;img&apos;]]
+Session ID: bcc86bdc42d3b27384579efc1735ab1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at ObjectRepository.dashboardPage.logOut(dashboardPage.java:98)
+	at GenericBaseClassUtility.BaseClass.afterMethod(BaseClass.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Campaign_Test_Cases.Create_Campaign_Test#CreateCampaignWithCloseDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at Campaign_Test_Cases.Create_Campaign_Test.CreateCampaignWithCloseDateTest(Create_Campaign_Test.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Campaign_Test_Cases.Create_Campaign_Test#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Campaign_Test_Cases.Create_Campaign_Test#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Campaign_Test_Cases.Create_Campaign_Test#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Campaign_Test_Cases.Create_Campaign_Test#createCampaignWithoutCloseDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;user&quot; class=&quot;svg-inline--fa fa-user &quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot; style=&quot;font-size: 22px; padding: 0px;&quot;&gt;...&lt;/svg&gt; is not clickable at point (1448, 35). Other element would receive the click: &lt;div role=&quot;alert&quot; class=&quot;Toastify__toast-body&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.166)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcc86bdc42d3b27384579efc1735ab1f, clickElement {id=f.AAEA1ACD55F0CDC3242F625750EEAB5E.d.71591BFC6E99C3EF0219DE14B535F08C.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\wbabe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54183/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bcc86bdc42d3b27384579efc1735ab1f)] -&gt; xpath: //*[ name()=&apos;svg&apos; and @role =&apos;img&apos;]]
+Session ID: bcc86bdc42d3b27384579efc1735ab1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at ObjectRepository.dashboardPage.logOut(dashboardPage.java:98)
+	at GenericBaseClassUtility.BaseClass.afterMethod(BaseClass.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Contact_Test_Cases.CreatE_ContactWithCampaignTest#createContactWithCampaignTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Login_Test_Cases.LoginTest#logInTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Product_Test_Cases.CreateProductTest#createProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

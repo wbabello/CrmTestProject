@@ -32,13 +32,15 @@ import ObjectRepository.CreateCampaignPage;
 import ObjectRepository.LogOutPage;
 import ObjectRepository.LoginPage;
 import ObjectRepository.dashboardPage;
+import genericListenerUtility.ListenerImp;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericBaseClassUtility.BaseClass;
-
+@Listeners(ListenerImp.class)
 public class CrtCmpgnWithMultipleExcelTestData extends BaseClass{
 	@Test
 	public void Create_Campaign_WithCloseDate_TC1() throws IOException, InterruptedException {

@@ -30,13 +30,16 @@ import ObjectRepository.CreateCampaignPage;
 import ObjectRepository.LogOutPage;
 import ObjectRepository.LoginPage;
 import ObjectRepository.dashboardPage;
+import genericListenerUtility.ListenerImp;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericBaseClassUtility.BaseClass;
 
+@Listeners(ListenerImp.class)
 public class Create_Campaign_Test extends BaseClass {
 	@Test()
 	public void CreateCampaignWithCloseDateTest() throws IOException, InterruptedException {
@@ -60,18 +63,18 @@ public class Create_Campaign_Test extends BaseClass {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		dashboardPage dashBdPage = new dashboardPage(driver);
 		dashBdPage.getCampaignLink().click();
 		CampaignPage campaign = new CampaignPage(driver);
 		campaign.getCreateCampaign().click();
 		CreateCampaignPage createCampaign = new CreateCampaignPage(driver);
 		createCampaign.createCampinWithDate(campName, targetSize, closeDate);
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 //		campaign.displayCampaignMessage(campName);
 		String confMsg = driver.findElement(By.xpath("//div[@role='alert']")).getText();
 
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 
 		boolean status = confMsg.contains(campName);
 		Assert.assertEquals(status, true);
@@ -80,7 +83,8 @@ public class Create_Campaign_Test extends BaseClass {
 		System.out.println("TestCase1 Created Successfull");
 		
 	}
-
+	
+	
 	@Test()
 	public void createCampaignWithoutCloseDateTest() throws IOException, InterruptedException {
 
@@ -101,7 +105,7 @@ public class Create_Campaign_Test extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
 		
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 
 		
 		dashboardPage dashBdPage = new dashboardPage(driver);
@@ -110,9 +114,9 @@ public class Create_Campaign_Test extends BaseClass {
 		campaign.getCreateCampaign().click();
 		CreateCampaignPage createCampaign = new CreateCampaignPage(driver);
 		createCampaign.createCampinWithoutDate(campName, targetSize);
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		campaign.displayCampaignMessage(campName);
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		
 		System.out.println("TestCase2 Created Successfull");
 

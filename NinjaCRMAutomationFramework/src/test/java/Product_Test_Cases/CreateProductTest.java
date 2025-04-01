@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import GenericBaseClassUtility.BaseClass;
@@ -14,7 +15,10 @@ import GenericJavaUtility.JavaUtility;
 import ObjectRepository.CreateProductPage;
 import ObjectRepository.ProductsPage;
 import ObjectRepository.dashboardPage;
+import genericListenerUtility.ListenerImp;
 
+
+@Listeners(ListenerImp.class)
 public class CreateProductTest extends BaseClass {
 @Test(groups = "regressionTest")
 	public void createProductTest() throws IOException, InterruptedException {
